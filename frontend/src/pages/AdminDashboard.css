@@ -1,0 +1,77 @@
+
+
+.admin-dashboard-wrapper {
+  min-height: 100vh;
+  background: gray;
+  padding: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-x: auto;
+  background-image: url("/adminpage.jpg");
+}
+
+.admin-dashboard-wrapper h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color:black;
+  margin-bottom: 2rem;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+}
+
+.admin-dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff26;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard-table thead {
+  background-color:rgba(0, 0, 0, 0.562);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.admin-dashboard-table th,
+.admin-dashboard-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-dashboard-table tbody tr:nth-child(even) {
+  background-color:rgba(128, 128, 128, 0.418);
+}
+
+.admin-dashboard-table select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.admin-dashboard-table select:focus {
+  border-color:gray;
+  outline: none;
+}
+
+.admin-dashboard-table button {
+  background-color:rgba(0, 0, 0, 0.633);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-dashboard-table button:hover {
+  background-color: gray;
+  transform: translateY(-2px);
+}

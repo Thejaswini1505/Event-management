@@ -1,0 +1,79 @@
+/* pages/CustomerMyEvents.css */
+.myevents-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(238, 173, 116, 0.41);
+  min-height: 100vh;
+  border-radius: 30px;
+  border:1px solid rgba(139, 69, 19, 0.537);
+  
+}
+
+.myevents-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:rgb(113, 55, 13);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.myevents-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  
+}
+
+.myevents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ 2 cards per row */
+  gap: 24px;
+}
+
+/* Responsive fallback for small screens */
+@media (max-width: 768px) {
+  .myevents-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}
+
+.myevent-card {
+  background-color: rgba(238, 173, 116, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.myevent-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 50px 20px rgba(82, 19, 19, 0.396);
+}
+
+.myevent-title {
+  font-size: 1.5rem;
+  color: #5b4c3d;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.myevent-card p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.myevent-card p span {
+  font-weight: 600;
+  color: #555;
+}
+
+.myevent-date {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #999;
+  font-style: italic;
+}
